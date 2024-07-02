@@ -1,0 +1,33 @@
+const int led = 9;    // Led positive terminal to digital pin 9 on Mega 2560
+const int sensor = 5; // Signal pin of sensor to digital pin 5 on Mega 2560
+int state = LOW;
+int val = 0;
+
+void setup() {
+  pinMode(led, OUTPUT);   // Set LED pin as an output
+  pinMode(sensor, INPUT); // Set sensor pin as an input
+  Serial.begin(9600);     // Initialize serial communication
+}
+
+void loop() {
+  val = digitalRead(sensor);
+  
+  if (val == HIGH) {
+    digitalWrite(led, HIGH);
+    //delay(5); // Delay of LED is 500ms
+    
+    if (state == LOW) {
+      Serial.println("Motion detected");
+      state = HIGH;
+    }
+  } 
+  else {
+    digitalWrite(led, LOW);
+    // delay(5 ); // Delay of LED is 500ms
+    
+    if (state == HIGH) {
+      Serial.println("Motion has stopped");
+      state = LOW;
+    }
+  }
+}
