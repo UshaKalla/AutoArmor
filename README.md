@@ -1,4 +1,4 @@
-# AutoArmor: Anti-Vehicle Theft Concept Overview
+# AutoArmor: Armor Up Against Auto Theft
 
 > **Note:** This project description outlines a prototype and concept for an anti-theft security system using Arduino, motion sensors, and an application interface to help vehicle owners monitor their surroundings and prevent break-ins.
 
@@ -25,3 +25,8 @@
 * **Prototyping:** Tested the PIR sensor efficiency using an LED light indicator to simulate camera triggers before moving to software integration.
 * **Threshold Tuning:** Addressed the challenge of filtering out everyday pedestrian traffic by setting a precise detection distance and time threshold.
 * **Learnings:** Expanded prototyping, app design, and system architecture skills to address a widespread community problem.
+
+---
+
+### Related Video
+* Watch the AutoArmor concept video on YouTube: [AutoArmor: armor up against auto theft](https://youtu.be/iQKQmp-cSho)
